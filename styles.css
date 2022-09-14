@@ -90,6 +90,9 @@ body {
 .bold {
   font-weight: 700;
 }
+.center{
+  text-align: center;
+}
 .inactive {
   border: 2px solid white !important;
 }
@@ -142,7 +145,9 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -152,7 +157,8 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -189,4 +195,13 @@ button {
   .card {
     flex-direction: column;
   }
+  
 }
+
+
+@media only screen and  (min-width: 992px) { 
+  #histories {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+ }
