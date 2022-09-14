@@ -38,8 +38,9 @@ body {
   height: 100px;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   align-items: center;
-  padding-left: 5rem;
+  padding: 0 5rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
@@ -195,13 +196,11 @@ button {
   .card {
     flex-direction: column;
   }
-  
 }
 
 
 @media only screen and  (min-width: 992px) { 
   #histories {
     grid-template-columns: repeat(3, 1fr);
-    
   }
  }
